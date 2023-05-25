@@ -158,6 +158,7 @@ public class GameController {
     @MessageMapping("/games/{gameId}/noYtApi")
     public void noYtApi(@DestinationVariable String gameId) {
         gameService.noYtApi(gameId);
+        System.out.println("new code")
     } 
 
     @MessageMapping("/games/{gameId}/players/{playerToken}/decision")
